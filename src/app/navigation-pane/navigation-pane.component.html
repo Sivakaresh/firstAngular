@@ -1,0 +1,70 @@
+
+
+
+<div class="row affix-row">
+        <div class="col-sm-3 col-md-2 affix-sidebar">
+            <div class="sidebar-nav">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <span class="visible-xs navbar-brand">Sidebar menu</span>
+        </div>
+        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+          <ul class="nav navbar-nav" id="sidenav01">
+
+            <li>
+                <a routerLink="/form" data-toggle="collapse"  data-parent="#sidenav01" class="collapsed">
+                <span class="glyphicon glyphicon-cloud"></span> Department 
+                </a>
+                
+              </li>
+
+              <li>
+                  <a routerLink="/role" data-toggle="collapse"  data-parent="#sidenav01" class="collapsed">
+                  <span class="glyphicon glyphicon-cloud"></span> Role 
+                  </a>
+                  
+                </li>
+
+            <li>
+              <a  data-toggle="collapse" data-target="#toggleDemo" data-parent="#sidenav01" class="collapsed">
+              <span class="glyphicon glyphicon-cloud"></span> Leave <span class="caret pull-right"></span>
+              </a>
+              <div class="collapse" id="toggleDemo" style="height: 0px;">
+                <ul class="nav nav-list">
+                  <li><a routerLink="/leave">Leave</a></li>
+                  <li><a href="#">Leave Request</a></li>
+                  <li><a href="#">Leave Type</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li >
+              <a href="" data-toggle="collapse" data-target="#toggleDemo2" data-parent="#sidenav01" class="collapsed">
+              <span class="glyphicon glyphicon-inbox"></span> Carry forward 
+              </a>
+              <div class="collapse" id="toggleDemo2" style="height: 0px;">
+                <ul class="nav nav-list">
+                  <li><a href="#">Submenu2.1</a></li>
+                  <li><a href="#">Submenu2.2</a></li>
+                  <li><a href="#">Submenu2.3</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a routerLink="/user"><span class="glyphicon glyphicon-lock"></span> User</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> Holiday <span class="badge pull-right">42</span></a></li>
+            <li><a href=""><span class="glyphicon glyphicon-cog"></span> PreferencesMenu</a></li>
+          </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+        </div>
+        <div class="col-sm-9 col-md-10 affix-content">
+            <div class="container">
+                
+         

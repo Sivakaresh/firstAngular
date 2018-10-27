@@ -1,0 +1,16 @@
+
+<h1>Leave Details</h1>
+
+
+<table border='2'>
+  <tr>
+      <th>Leave type Id</th><th>remain days</th>
+  </tr>
+  <tr *ngFor = "let lev of Leave">
+    <td>{{lev.leaveTypeId}}</td>
+    <td>{{lev.remainDays}}</td>
+    
+    <td><button type="button"  (click)="editDept(test)" class="btn btn-success" data-toggle="modal" data-target="#edit">Edit</button></td>
+    <td><button type="button"  (click)="dltDept(test)" class="btn btn-danger" data-toggle="modal" data-target="#delete">Delete</button></td>
+  </tr>
+</table>

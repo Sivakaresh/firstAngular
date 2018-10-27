@@ -1,0 +1,29 @@
+
+
+        <app-login *ngIf="loggin; else elseBlock" (childEvent)="message=$event"></app-login>
+
+        <ng-template #elseBlock>
+
+                <div class="col-md-12 header">
+                    <app-header></app-header>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-2 navi" >        
+                        <app-navigation-pane></app-navigation-pane>
+                    </div>
+                
+                    <div class="col-md-10">
+                        <router-outlet></router-outlet>
+                    </div>
+                </div>
+                
+                    <div class="col-md-12 header">
+                        <app-footer></app-footer>
+                    </div>
+                
+        </ng-template>
+
+
+
+
